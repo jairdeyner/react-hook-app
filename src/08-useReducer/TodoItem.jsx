@@ -5,6 +5,7 @@ export const TodoItem = ({todo, onDeleteTodo, onToogleTodo}) => {
     <li className="list-group-item d-flex justify-content-between">
       <span
         role="button"
+        aria-label="span"
         className={`align-self-center ${done ? "text-decoration-line-through" : ""}`}
         onClick={() => onToogleTodo(id)}
       >
